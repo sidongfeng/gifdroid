@@ -33,7 +33,7 @@ def read_graph(utg):
     f = open(utg, 'r')
     parsed_json = json.loads(f.read())
     f.close()
-    # 读取graph
+    # read graph
     vertices = 0
     graph = []
     for event in parsed_json['events']:
@@ -44,7 +44,7 @@ def read_graph(utg):
             vertices = s
         if d > vertices:
             vertices = d
-    # 初始化graph
+    # init graph
     g = Graph(vertices+1)
     for s, d in graph:
         g.addEdge(s, d)
@@ -117,24 +117,25 @@ def find_execution_trace(utg, index_sequence):
 
 
 if __name__ == "__main__":
-    # graph = Graph(9)
-    # graph.addEdge(0, 1)
-    # graph.addEdge(1, 2)
-    # graph.addEdge(2, 3)
-    # graph.addEdge(3, 4)
-    # graph.addEdge(4, 3)
-    # graph.addEdge(4, 5)
-    # graph.addEdge(5, 6)
-    # graph.addEdge(6, 1)
-    # graph.addEdge(2, 7)
-    # graph.addEdge(7, 8)
-    # graph.addEdge(8, 4)
-    # graph.addEdge(8, 5)
-    # index = [2,4,5]
-    # paths = find_all_paths_in_graph(graph, 0, index[-1])
-    # print(paths)
-    # trace = find_execution_trace(index, paths)
-    # print(trace)
+    # Debug
+    graph = Graph(9)
+    graph.addEdge(0, 1)
+    graph.addEdge(1, 2)
+    graph.addEdge(2, 3)
+    graph.addEdge(3, 4)
+    graph.addEdge(4, 3)
+    graph.addEdge(4, 5)
+    graph.addEdge(5, 6)
+    graph.addEdge(6, 1)
+    graph.addEdge(2, 7)
+    graph.addEdge(7, 8)
+    graph.addEdge(8, 4)
+    graph.addEdge(8, 5)
+    index = [2,4,5]
+    paths = find_all_paths_in_graph(graph, 0, index[-1])
+    print(paths)
+    trace = find_execution_trace(index, paths)
+    print(trace)
 
 
 
