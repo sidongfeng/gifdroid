@@ -39,13 +39,6 @@ def mapping(image, index, size):
         sim_orb = match_bfmatcher(des, v['orb'])
         results[k] = alpha * sim_ssim + (1-alpha) * sim_orb
     results = sorted([(v, k) for (k, v) in results.items()], reverse=True)
-    # debug
-    # index = {}
-    # for i in results:
-    #     index[i[1]] = i[0]
-    # print(index['web-build_2021-04-18T06_47_13.573Z_lyfw_Nexus5X-24-en_US-portrait_artifacts_3.png'])
-    # print(results[:10])
-    # exit()
     return results[0][1]
 
 def gui_mapping(screenshots, keyframes):
@@ -55,6 +48,7 @@ def gui_mapping(screenshots, keyframes):
     return index_sequence
 
 if __name__ == "__main__":
+    # Debug
     index, size = load_screenshots('/Users/mac/Documents/Python/DroidbotMapping/dataset/firebase/KISS/artifacts')
     frame_id = 11
     vidcap = cv2.VideoCapture('/Users/mac/Documents/Python/DroidbotMapping/dataset/GT/KISS/2.gif')
