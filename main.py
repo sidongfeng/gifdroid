@@ -31,7 +31,6 @@ def read_graph_with_action(utg):
     f = open(utg, 'r')
     parsed_json = json.loads(f.read())
     f.close()
-    # 读取graph
     vertices = 0
     graph = []
     for event in parsed_json['events']:
