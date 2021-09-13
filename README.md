@@ -61,6 +61,7 @@ The overflow of our approach can be seen in Algorithm 1 in our paper.
     * utg: GUI transition graph in json format depicting the screenshots transitions
     * artifact: screenshots in UTG
 * When you are ready to complete the installation, run `python main.py --video=<filename> --utg=<utg.json> --artifact=<folder> --out=<out_filename>`. If no out argument is specified, the default execution.json file is outputted✨.
+* A demo of input and output is shown in `<example>` folder
 
 
 ## Performance
