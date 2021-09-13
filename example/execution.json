@@ -1,0 +1,77 @@
+{
+    "video": "4.gif",
+    "utg": "utg.json",
+    "artifact": "artifacts/",
+    "replay_traces": [
+        {
+            "trace": [
+                {
+                    "sourceScreenId": 0,
+                    "destinationScreenId": 1,
+                    "action": {
+                        "type": "LAUNCH",
+                        "targetDetails": "app"
+                    }
+                },
+                {
+                    "sourceScreenId": 1,
+                    "destinationScreenId": 2,
+                    "action": {
+                        "type": "TAP",
+                        "targetDetails": {
+                            "resourceName": "fr.neamar.kiss:id/menuButton",
+                            "className": "android.widget.ImageView",
+                            "androidClassName": "android.widget.ImageView",
+                            "contentDescription": "Menu"
+                        }
+                    }
+                },
+                {
+                    "sourceScreenId": 2,
+                    "destinationScreenId": 7,
+                    "action": {
+                        "type": "TAP",
+                        "targetDetails": {
+                            "className": "com.android.internal.view.menu.ListMenuItemView",
+                            "androidClassName": "android.widget.LinearLayout"
+                        }
+                    }
+                },
+                {
+                    "sourceScreenId": 7,
+                    "destinationScreenId": 8,
+                    "action": {
+                        "type": "TAP",
+                        "targetDetails": {
+                            "className": "android.widget.LinearLayout",
+                            "androidClassName": "android.widget.LinearLayout"
+                        }
+                    }
+                },
+                {
+                    "sourceScreenId": 8,
+                    "destinationScreenId": 9,
+                    "action": {
+                        "type": "TAP",
+                        "targetDetails": {
+                            "className": "android.widget.LinearLayout",
+                            "androidClassName": "android.widget.LinearLayout"
+                        }
+                    }
+                },
+                {
+                    "sourceScreenId": 9,
+                    "destinationScreenId": 10,
+                    "action": {
+                        "type": "TAP",
+                        "targetDetails": {
+                            "resourceName": "android:id/select_dialog_listview",
+                            "className": "com.android.internal.app.AlertController$RecycleListView",
+                            "androidClassName": "android.widget.ListView"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
