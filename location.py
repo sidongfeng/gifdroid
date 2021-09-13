@@ -64,19 +64,19 @@ def detect_keyframes(sim_sequence, stable_threshold=2):
 def keyframe_location(video, stable_threshold=2, visualize=False):
     vidcap = cv2.VideoCapture(video)
 
-    # 读取video
+    # read video
     frames, y_frames = read_frames_from_video(video)
-    # 帧差
+    # consecutive frame difference
     sim_list = calculate_sim_seq(y_frames)
 
-    # 可视化
+    # visualize
     if visualize:
         plt.plot(np.arange(len(sim_list)), np.array(sim_list))
         plt.xlabel("frame")
         plt.ylabel("similarity")
         plt.show()
 
-    # 寻找稳定帧
+    # detect keyframes
     keyframes_index = detect_keyframes(sim_list,stable_threshold=2)
     
     keyframes = [frames[i] for i in keyframes_index]
