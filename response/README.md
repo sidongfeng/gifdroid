@@ -5,5 +5,5 @@ According to our experiment in Section 5, it takes about 138.08 seconds to repla
 Although it may take conventional software instrumentation less time to finish the auto replay, it requires extra code to an app for monitoring program behavior including sophisticated accessibility or UI automation APIs, and continuous updates along with the app and operating system. The great generality and less development effort distinguish our approach from these instrumentation-based methods.
 
 <p align="center">
-<img src="../figures/table7.png" width="50%"/> 
+<img src="../figures/table7.png" width="80%"/> 
 </p>
