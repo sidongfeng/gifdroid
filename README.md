@@ -63,7 +63,7 @@ The overflow of our approach can be seen in Algorithm 1 in our paper.
 * When you are ready to complete the installation, run `python main.py --video=<filename> --utg=<utg.json> --artifact=<folder> --out=<out_filename>`. If no out argument is specified, the default execution.json file is outputted✨.
 * A demo of input and output is shown in `<example>` folder
 <p align="center">
-<img src="figures/response2.png" width="100%"/> 
+<img src="figures/response.png" width="90%"/> 
 </p><p align="center">Figure: An example of our output, execution trace.<p align="center">
    
 
