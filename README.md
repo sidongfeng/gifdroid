@@ -53,7 +53,7 @@ The overflow of our approach can be seen in Algorithm 1 in our paper.
 ### GIFdroid Installation
 * Ensure that the environment you are running in is operating with Python 3.6.9.
 * Current Option:
-    * Clone the repository [here](https://github.com/gifdroid/gifdroid.git), navigate to python_v2s directory, and execute `pip install -r requirements.txt`. Please make sure you have installed all the requirements.
+    * Clone the repository [here](https://github.com/gifdroid/gifdroid.git), navigate to gifdroid directory, and execute `pip install -r requirements.txt`. Please make sure you have installed all the requirements.
 
 ### Execution
 * Input requirements:
