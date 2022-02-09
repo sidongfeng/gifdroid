@@ -1,6 +1,8 @@
 # GIFdroid: Automated Replay of Visual Bug Reports for Android Apps
 
+[![Play the video](https://i9.ytimg.com/vi/5GIw1Hdr6CE/mq3.jpg?sqp=CNSbjZAG&rs=AOn4CLBaqo_P1WrqMZwabCe4UxRncobexw)](https://youtu.be/5GIw1Hdr6CE "Youtube")
 
+## Approach
 <p align="center">
 <img src="figures/overview.png" width="90%"/> 
 </p><p align="center">The overview of GIFdroid consists of three phases, Keyframe Location, GUI Mapping, Execution Trace generation.<p align="center">
@@ -105,6 +107,16 @@ The overflow of our approach can be seen in Algorithm 1 in our paper.
     * Table 6 shows the experiment result. the experiment group reproduces the visual bug recording much faster than that of the control group (with an average of 171.4 seconds versus 65.0 seconds). In fact, the average time of the control group is underestimated, because three bugs fail to be reproduced within 10 minutes, which means that participants may need more time. In contrast, all participants in the experiment group finish all the tasks within 2 minutes.
     * For more detail of this user study, please see the [website](https://sites.google.com/view/gifdroid).
 
+## Citations
+Please consider citing this paper if you use the code:
+```
+@article{feng2021gifdroid,
+  title={GIFdroid: Automated Replay of Visual Bug Reports for Android Apps},
+  author={Feng, Sidong and Chen, Chunyang},
+  journal={arXiv preprint arXiv:2112.04128},
+  year={2021}
+}
+```
 
 ## References
 1. [Comixify](https://github.com/maciej3031/comixify)
