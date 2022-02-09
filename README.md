@@ -1,6 +1,7 @@
 # GIFdroid: Automated Replay of Visual Bug Reports for Android Apps
 
-[![Play the video](https://i9.ytimg.com/vi/5GIw1Hdr6CE/mq3.jpg?sqp=CNSbjZAG&rs=AOn4CLBaqo_P1WrqMZwabCe4UxRncobexw)](https://youtu.be/5GIw1Hdr6CE "Youtube")
+## Watch the video
+[![Watch the video](figures/youtube.png)](https://www.youtube.com/watch?v=5GIw1Hdr6CE "Watch the video")
 
 ## Approach
 <p align="center">
